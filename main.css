@@ -1,0 +1,247 @@
+body {
+  color: #000000;
+}
+
+h1,
+h2 {
+  margin: 0;
+  font-family: 'Overpass', sans-serif;
+  font-size: 25px;
+  text-align: center;
+}
+
+p {
+  padding: inherit;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+}
+
+/*NAV BAR*/
+
+
+
+
+/*Waving Hand Emoji*/
+span.wave {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0.0deg)
+  }
+
+  10% {
+    transform: rotate(-10.0deg)
+  }
+
+  20% {
+    transform: rotate(12.0deg)
+  }
+
+  30% {
+    transform: rotate(-10.0deg)
+  }
+
+  40% {
+    transform: rotate(9.0deg)
+  }
+
+  50% {
+    transform: rotate(0.0deg)
+  }
+
+  100% {
+    transform: rotate(0.0deg)
+  }
+}
+
+/*CSS Responsive GRID BOX*/
+.grid {
+  display: inline-grid;
+}
+
+.box {
+  padding: 10px;
+  background-color: white;
+  margin: 10px 0;
+}
+
+@media screen and (min-width: 320px) {
+  .grid {
+    display: inline-grid;
+    grid-template-rows: repeat(1fr, 1fr);
+    grid-template-columns: repeat(1fr, 1fr);
+    grid-gap: 2px;
+  }
+
+  .box {
+    margin: 0;
+  }
+
+  .box:nth-child(1) {
+    grid-column: span 12;
+    grid-row: span 2;
+    background-color: #555273;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cg %3E%3Cpolygon fill='%237f959e' points='100 57.1 64 93.1 71.5 100.6 100 72.1'/%3E%3Cpolygon fill='%239bb5bf' points='100 57.1 100 72.1 128.6 100.6 136.1 93.1'/%3E%3Cpolygon fill='%237f959e' points='100 163.2 100 178.2 170.7 107.5 170.8 92.4'/%3E%3Cpolygon fill='%239bb5bf' points='100 163.2 29.2 92.5 29.2 107.5 100 178.2'/%3E%3Cpath fill='%23b6d5e1' d='M100 21.8L29.2 92.5l70.7 70.7l70.7-70.7L100 21.8z M100 127.9L64.6 92.5L100 57.1l35.4 35.4L100 127.9z'/%3E%3Cpolygon fill='%239ea7a9' points='0 157.1 0 172.1 28.6 200.6 36.1 193.1'/%3E%3Cpolygon fill='%23c0cbcd' points='70.7 200 70.8 192.4 63.2 200'/%3E%3Cpolygon fill='%23e2eff1' points='27.8 200 63.2 200 70.7 192.5 0 121.8 0 157.2 35.3 192.5'/%3E%3Cpolygon fill='%23c0cbcd' points='200 157.1 164 193.1 171.5 200.6 200 172.1'/%3E%3Cpolygon fill='%239ea7a9' points='136.7 200 129.2 192.5 129.2 200'/%3E%3Cpolygon fill='%23e2eff1' points='172.1 200 164.6 192.5 200 157.1 200 157.2 200 121.8 200 121.8 129.2 192.5 136.7 200'/%3E%3Cpolygon fill='%239ea7a9' points='129.2 0 129.2 7.5 200 78.2 200 63.2 136.7 0'/%3E%3Cpolygon fill='%23e2eff1' points='200 27.8 200 27.9 172.1 0 136.7 0 200 63.2 200 63.2'/%3E%3Cpolygon fill='%23c0cbcd' points='63.2 0 0 63.2 0 78.2 70.7 7.5 70.7 0'/%3E%3Cpolygon fill='%23e2eff1' points='0 63.2 63.2 0 27.8 0 0 27.8'/%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  .box:nth-child(2),
+  .box:nth-child(3) {
+    grid-column: span 6;
+    grid-row: span 4;
+    text-align: center;
+  }
+
+  .box:nth-child(4),
+  .box:nth-child(5) {
+    grid-column: span 6;
+    grid-row: span 2;
+    text-align: center;
+  }
+
+  .box:nth-child(6) {
+    grid-column: span 12;
+    text-align: center;
+  }
+
+  .box:nth-child(7) {
+    grid-column: span 12;
+    text-align: center;
+    background-color: #555273;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cg %3E%3Cpolygon fill='%237f959e' points='100 57.1 64 93.1 71.5 100.6 100 72.1'/%3E%3Cpolygon fill='%239bb5bf' points='100 57.1 100 72.1 128.6 100.6 136.1 93.1'/%3E%3Cpolygon fill='%237f959e' points='100 163.2 100 178.2 170.7 107.5 170.8 92.4'/%3E%3Cpolygon fill='%239bb5bf' points='100 163.2 29.2 92.5 29.2 107.5 100 178.2'/%3E%3Cpath fill='%23b6d5e1' d='M100 21.8L29.2 92.5l70.7 70.7l70.7-70.7L100 21.8z M100 127.9L64.6 92.5L100 57.1l35.4 35.4L100 127.9z'/%3E%3Cpolygon fill='%239ea7a9' points='0 157.1 0 172.1 28.6 200.6 36.1 193.1'/%3E%3Cpolygon fill='%23c0cbcd' points='70.7 200 70.8 192.4 63.2 200'/%3E%3Cpolygon fill='%23e2eff1' points='27.8 200 63.2 200 70.7 192.5 0 121.8 0 157.2 35.3 192.5'/%3E%3Cpolygon fill='%23c0cbcd' points='200 157.1 164 193.1 171.5 200.6 200 172.1'/%3E%3Cpolygon fill='%239ea7a9' points='136.7 200 129.2 192.5 129.2 200'/%3E%3Cpolygon fill='%23e2eff1' points='172.1 200 164.6 192.5 200 157.1 200 157.2 200 121.8 200 121.8 129.2 192.5 136.7 200'/%3E%3Cpolygon fill='%239ea7a9' points='129.2 0 129.2 7.5 200 78.2 200 63.2 136.7 0'/%3E%3Cpolygon fill='%23e2eff1' points='200 27.8 200 27.9 172.1 0 136.7 0 200 63.2 200 63.2'/%3E%3Cpolygon fill='%23c0cbcd' points='63.2 0 0 63.2 0 78.2 70.7 7.5 70.7 0'/%3E%3Cpolygon fill='%23e2eff1' points='0 63.2 63.2 0 27.8 0 0 27.8'/%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  .box:nth-child(8) {
+    grid-column: span 12;
+    text-align: center;
+  }
+
+  .box:nth-child(9),
+  .box:nth-child(10) {
+    grid-column: span 6;
+    grid-row: span 2;
+    text-align: center;
+  }
+
+  .box:nth-child(11) {
+    grid-column: span 12;
+    grid-row: span 2;
+    text-align: center;
+  }
+
+  .box:nth-child(12) {
+    grid-column: span 12;
+    grid-row: span 2;
+    text-align: center;
+    background-color: #555273;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cg %3E%3Cpolygon fill='%237f959e' points='100 57.1 64 93.1 71.5 100.6 100 72.1'/%3E%3Cpolygon fill='%239bb5bf' points='100 57.1 100 72.1 128.6 100.6 136.1 93.1'/%3E%3Cpolygon fill='%237f959e' points='100 163.2 100 178.2 170.7 107.5 170.8 92.4'/%3E%3Cpolygon fill='%239bb5bf' points='100 163.2 29.2 92.5 29.2 107.5 100 178.2'/%3E%3Cpath fill='%23b6d5e1' d='M100 21.8L29.2 92.5l70.7 70.7l70.7-70.7L100 21.8z M100 127.9L64.6 92.5L100 57.1l35.4 35.4L100 127.9z'/%3E%3Cpolygon fill='%239ea7a9' points='0 157.1 0 172.1 28.6 200.6 36.1 193.1'/%3E%3Cpolygon fill='%23c0cbcd' points='70.7 200 70.8 192.4 63.2 200'/%3E%3Cpolygon fill='%23e2eff1' points='27.8 200 63.2 200 70.7 192.5 0 121.8 0 157.2 35.3 192.5'/%3E%3Cpolygon fill='%23c0cbcd' points='200 157.1 164 193.1 171.5 200.6 200 172.1'/%3E%3Cpolygon fill='%239ea7a9' points='136.7 200 129.2 192.5 129.2 200'/%3E%3Cpolygon fill='%23e2eff1' points='172.1 200 164.6 192.5 200 157.1 200 157.2 200 121.8 200 121.8 129.2 192.5 136.7 200'/%3E%3Cpolygon fill='%239ea7a9' points='129.2 0 129.2 7.5 200 78.2 200 63.2 136.7 0'/%3E%3Cpolygon fill='%23e2eff1' points='200 27.8 200 27.9 172.1 0 136.7 0 200 63.2 200 63.2'/%3E%3Cpolygon fill='%23c0cbcd' points='63.2 0 0 63.2 0 78.2 70.7 7.5 70.7 0'/%3E%3Cpolygon fill='%23e2eff1' points='0 63.2 63.2 0 27.8 0 0 27.8'/%3E%3C/g%3E%3C/svg%3E");
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+/*Buttons*/
+.btn {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #555273;
+  border-radius: 3rem;
+  color: #555273;
+  cursor: pointer;
+  display: inline-block;
+  align-self: center;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px;
+  padding: 1.2em 1.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+.btn:hover, .btn:focus {
+  color: #fff;
+  outline: 0;
+}
+
+.first {
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+.first:hover {
+  box-shadow: 0 0 40px 40px #65799B inset;
+}
+
+/*Social Media Icons*/
+.fa-linkedin:hover {
+  color: #E2EFF1;
+}
+
+.fa-envelope-square:hover {
+  color: #E2EFF1;
+}
+
+.fa-github-square:hover {
+  color: #E2EFF1;
+}
+/*Contact Buttons*/
+.social-media {
+  margin-top: 5rem;
+}
+
+.social-media i {
+  font-size: 1.5rem;
+  transition: color 650ms;
+}
+
+
+/*MEDIA QUERIES*/
+
+@media screen and (min-width: 800px) {
+  .grid {
+    display: inline-grid;
+    grid-template-rows: repeat(1fr, 1fr);
+    grid-template-columns: repeat(1fr, 1fr);
+    grid-gap: 2px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .grid {
+    display: inline-grid;
+    grid-template-rows: auto ;
+    grid-template-columns: auto ;
+    grid-gap: 2px;
+  }
+
+  h1,
+  h2 {
+    margin: 0;
+    font-family: 'Overpass', sans-serif;
+    font-size: 2.5em;
+    text-align: center;
+  }
+
+  p {
+    padding: inherit;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+  }
+}
