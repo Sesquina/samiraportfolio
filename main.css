@@ -2,21 +2,28 @@ body {
   color: #000000;
 }
 
+
 h1,
 h2 {
-  margin: 0;
+  margin: 10px 5px;
   font-family: 'Overpass', sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   text-align: center;
 }
 
 p {
-  padding: inherit;
   font-family: 'Montserrat', sans-serif;
-  font-size: 15px;
+  font-size: 12px;
 }
 
-/*NAV BAR*/
+.text{
+  padding-top: 5rem;
+  padding-bottom:1rem;
+}
+
+
+
+
 /*Waving Hand Emoji*/
 span.wave {
   animation-name: wave-animation;
@@ -72,7 +79,7 @@ span.wave {
     display: inline-grid;
     grid-template-rows: repeat(1fr, 1fr);
     grid-template-columns: repeat(1fr, 1fr);
-    grid-gap: 2px;
+    grid-gap: 1px;
   }
 
   .box {
@@ -233,7 +240,6 @@ img {
   }
 
   p {
-    padding: inherit;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2em;
   }
