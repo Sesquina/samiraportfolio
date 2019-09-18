@@ -180,20 +180,7 @@ span.wave {
     justify-content: center;
     text-align: center;
 }
-.table {
-	display: table;   /* Allow the centering to work */
-	margin: 0 auto;
-}
 
-ul#nav-list {
-	min-width: 696px;
-	list-style: none;
-	padding-top: 20px;
-  display: inline;
-	}
-	ul#nav-list li {
-		display: inline;
-	}
 
 
 
