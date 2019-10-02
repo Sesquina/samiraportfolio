@@ -8,6 +8,7 @@ h2 {
   font-family: 'Overpass', sans-serif;
   font-size: 20px;
   text-align: center;
+  padding: 10px;
 }
 
 p {
@@ -172,17 +173,21 @@ span.wave {
 }
 
 /*Social Media Icons*/
-.nav-list{
+
+.nav-list {
     list-style: none;
     width: 100%;
     height: 100%;
-    display: inline;
     justify-content: center;
     text-align: center;
+    padding: 10px;
 }
 
+.nav-list li {
+    display: inline-block;
+    padding: 0 10px;
 
-
+}
 
 
 /*MEDIA QUERIES*/
@@ -206,5 +211,4 @@ span.wave {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2em;
   }
-}
 }
